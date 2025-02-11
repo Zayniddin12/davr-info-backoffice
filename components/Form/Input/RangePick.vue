@@ -36,9 +36,9 @@
 import '@vuepic/vue-datepicker/dist/main.css'
 import { ref, watch, computed } from 'vue'
 import VueDatePicker from '@vuepic/vue-datepicker'
-import enUS from 'date-fns/locale/en-US/index.js'
-import ru from 'date-fns/locale/ru/index.js'
-import uz from 'date-fns/locale/uz/index.js'
+import enUS from 'date-fns/locale/en-US'
+import ru from 'date-fns/locale/ru'
+import uz from 'date-fns/locale/uz'
 import { useI18n } from 'vue-i18n'
 
 interface Props {
