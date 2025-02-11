@@ -53,6 +53,7 @@ export default <Partial<Config>>{
         gray: {
           DEFAULT: '#FAFAFA',
           100: '#E4E4E7',
+          200: '#9F9FA9',
         },
         red: {
           DEFAULT: '#E04A36',

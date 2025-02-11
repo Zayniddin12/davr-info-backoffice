@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
+
   app: {
     head: {
       title: 'Nuxt3 project',
@@ -17,7 +18,9 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   css: ['~/assets/tailwind.css'],
+
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-gtag',
@@ -42,16 +45,22 @@ export default defineNuxtConfig({
       'nuxt-simple-sitemap',
     ],
   ],
+
   nitro: {
     serveStatic: true,
   },
+
   devServerHandlers: [],
+
   runtimeConfig: {
     public: {
       baseURL: 'localhost',
     },
   },
+
   gtag: {
     id: process.env.GOOGLE_TAG_ID,
   },
+
+  compatibilityDate: '2025-02-11',
 })

@@ -3,11 +3,9 @@
     :class="[isOpen ? 'w-[265px]' : 'w-[75px]']"
     class="h-screen transition-300 shrink-0"
   />
-
-  <pre>{{ menu }}</pre>
   <div
     :class="[isOpen || hovered ? 'w-[265px]' : 'w-[75px]']"
-    class="h-screen bg-gray transition-300 fixed flex flex-col justify-between z-30 overflow-hidden"
+    class="h-screen border-r border-gray-100 bg-gray transition-300 fixed flex flex-col justify-between z-30 overflow-hidden"
     @mouseenter="hovered = true"
     @mouseleave="hovered = false"
   >
@@ -67,19 +65,30 @@
           </span>
         </div>
       </div>
-      <pre>{{ menuItems }}</pre>
-      <div class="flex flex-col py-5 gap-1">
-        <div v-for="(menuItem, index) in menuItems" :key="index">
+      <div class="flex flex-col py-5 px-2 gap-1">
+        <NuxtLink
+          v-for="(menuItem, index) in menuItems"
+          :key="index"
+          :to="menuItem?.route"
+        >
           <div
-            class="py-3 px-5 hover:bg-blue-200/10 transition-300 flex items-center group gap-3 h-12"
+            class="py-2 px-3 hover:bg-gray-100 transition-300 flex items-center group gap-3 h-12 cursor-pointer rounded-lg"
           >
             <span
-              :class="`icon-${menuItem.icon}`"
-              class="text-xl text-dark group-hover:!text-primary transition-300"
+              :class="`${menuItem.icon}`"
+              class="text-xl text-gray-200 group-hover:!text-dark transition-300"
             ></span>
-            <p>{{ $t(menuItem?.name) }}</p>
+            <p class="font-semibold text-base leading-5n text-dark">
+              {{ $t(menuItem?.name) }}
+            </p>
           </div>
-        </div>
+        </NuxtLink>
+      </div>
+      <div class="absolute bottom-0 left-0 flex p-5 gap-2 items-center">
+        <span class="icon-life-buoy text-base text-gray-200"></span>
+        <p class="font-semibold text-base leading-5 text-dark">
+          {{ $t('support') }}
+        </p>
       </div>
     </div>
   </div>

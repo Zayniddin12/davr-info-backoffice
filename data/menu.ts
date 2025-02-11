@@ -4,13 +4,18 @@ export const menu = {
 }
 export const menuItems = [
   {
-    icon: 'list',
+    icon: 'icon-home',
+    name: 'dashboard',
+    route: '/',
+  },
+  {
+    icon: 'icon-list',
     name: 'datas',
     route: 'datas',
   },
   {
-    icon: 'users',
-    name: 'acounts',
-    route: 'acounts',
+    icon: 'icon-users',
+    name: 'accounts',
+    route: 'accounts',
   },
 ]
