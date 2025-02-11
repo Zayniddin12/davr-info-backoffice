@@ -1,4 +1,5 @@
 {
+  "name": "@repo/client",
   "private": true,
   "type": "module",
   "scripts": {
