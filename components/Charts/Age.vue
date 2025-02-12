@@ -71,8 +71,8 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 
-import { IBarChartData } from '@/types/common'
-import { changeNumberFormat } from '@/utils'
+import type { IBarChartData } from '@/types/common'
+import { changeNumberFormat } from '@/utils/changeNumberFormat'
 import NoData from '@/components/Common/NoData/NoData.vue'
 import { CardsCard } from '#components'
 

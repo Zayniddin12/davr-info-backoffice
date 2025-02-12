@@ -1,5 +1,6 @@
-import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
-import { App } from 'vue'
+import axios from 'axios'
+import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
+import type { App } from 'vue'
 import VueAxios from 'vue-axios'
 
 import { JwtService } from '@/services/JwtService'

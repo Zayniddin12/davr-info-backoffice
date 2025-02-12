@@ -7,8 +7,7 @@ import { SectionSidebar } from '#components'
     <SectionSidebar />
 
     <div class="w-full h-full">
-      <!-- <CHeader v-bind="{ activeRoute }" /> -->
-
+      <LayoutsHeader />
       <div class="h-full w-full p-6">
         <div class="w-full h-full">
           <slot />

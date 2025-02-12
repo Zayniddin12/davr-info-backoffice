@@ -51,7 +51,6 @@
 import { computed, onMounted, reactive, ref } from 'vue'
 import dayjs from 'dayjs'
 import ApexChart from 'vue3-apexcharts'
-import { useI18n } from 'vue-i18n'
 import 'dayjs/locale/ru'
 import 'dayjs/locale/uz-latn.js'
 import { useDashboardStore } from '@/store/dashboard'

@@ -54,15 +54,13 @@
 </template>
 
 <script lang="ts" setup>
-import { useI18n } from 'vue-i18n'
 import { computed, reactive, ref, watch } from 'vue'
 // import CAgeChart from '@/components/Charts/CAgeChart.vue'
 // import TActiveUsers from '@/modules/Dashboard/components/Tables/TActiveUsers.vue'
 // import TLastRegisterUsers from '@/modules/Dashboard/components/Tables/TLastRegisterUsers.vue'
 import ApiService from '@/services/ApiService'
-import { ChargingStationStats } from '@/types/dashboard'
+import type { ChargingStationStats } from '@/types/dashboard'
 import { useDashboardStore } from '@/store/dashboard'
-import { useRoute, useRouter } from 'vue-router'
 import dayjs from 'dayjs'
 import { ChartsLine, ClientOnly } from '#components'
 

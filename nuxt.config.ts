@@ -24,6 +24,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-gtag',
+    '@nuxtjs/i18n',
     //   Enable if your Yandex Metrica with real credentials
     // [
     //   'yandex-metrika-module-nuxt3',
@@ -41,10 +42,28 @@ export default defineNuxtConfig({
           ['defineStore', 'definePiniaStore'], // import { defineStore as definePiniaStore } from 'pinia'
         ],
       },
-      'nuxt-simple-robots',
-      'nuxt-simple-sitemap',
     ],
   ],
+
+  i18n: {
+    langDir: 'locales',
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json' },
+      { code: 'uz', iso: 'uz-UZ', file: 'uz.json' },
+      { code: 'ru', iso: 'ru-RU', file: 'ru.json' },
+    ],
+    lazy: true,
+    useCookie: true,
+    cookieKey: 'locale',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'locale',
+      onlyOnRoot: true, // recommended
+      fallbackLocale: 'en',
+    },
+    defaultLocale: 'en',
+    strategy: 'prefix_and_default',
+  },
 
   nitro: {
     serveStatic: true,

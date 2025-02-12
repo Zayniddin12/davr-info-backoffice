@@ -14,14 +14,14 @@
     "@eslint/js": "^9.20.0",
     "eslint-config-prettier": "^10.0.1",
     "globals": "^15.14.0",
-    "nuxt": "^3.15.4",
+    "nuxt": "^3.11.2",
     "nuxt-gtag": "^3.0.2",
+    "@nuxtjs/i18n": "^8.3.1",
     "nuxt-simple-robots": "4.0.1",
     "nuxt-simple-sitemap": "^4.4.1",
     "typescript-eslint": "^8.24.0"
   },
   "dependencies": {
-    "18": "^0.0.0",
     "@ivanv/vue-collapse-transition": "^1.0.2",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
@@ -47,7 +47,6 @@
     "typescript": "^5.7.3",
     "vue-axios": "^3.5.2",
     "vue-chartjs": "^5.3.2",
-    "vue-i18n": "^11.1.1",
     "vue3-apexcharts": "^1.8.0",
     "yandex-metrika-module-nuxt3": "^1.5.3"
   }

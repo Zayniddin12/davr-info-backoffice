@@ -3,5 +3,7 @@
   "datas": "Информация",
   "accounts": "Счета",
   "dashboard": "Главная страница",
-  "support": "Поддерживать"
+  "support": "Поддерживать",
+  "help": "help",
+  "log_out": "logout"
 }

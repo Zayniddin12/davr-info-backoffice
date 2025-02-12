@@ -17,6 +17,3 @@ export function formatMoneyDecimal(number: any, fix = 0, option = 'decimal') {
   }
   return number ? new Intl.NumberFormat('ru-RU', option2).format(number) : '0'
 }
-export const changeNumberFormat = (number: number) => {
-  return number?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
-}

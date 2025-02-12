@@ -1,1 +1,6 @@
-{ "hello": "ello", "datas": "Datas", "accounts": "Accaunts" }
+{
+  "hello": "ello",
+  "datas": "Datas",
+  "accounts": "Accaunts",
+  "dashboard": { "charts": { "sort_title": "sort title" } }
+}

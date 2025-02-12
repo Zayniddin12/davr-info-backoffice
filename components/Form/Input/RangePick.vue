@@ -39,7 +39,6 @@ import VueDatePicker from '@vuepic/vue-datepicker'
 import enUS from 'date-fns/locale/en-US'
 import ru from 'date-fns/locale/ru'
 import uz from 'date-fns/locale/uz'
-import { useI18n } from 'vue-i18n'
 
 interface Props {
   startValue: number
